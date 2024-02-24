@@ -80,10 +80,6 @@ void CanMsg::begin()
       ACAN_ESP32_Filter::data, 0xF << 23, 0x187FFFFB);
   errorCode = ACAN_ESP32::can.begin(settings, filter);
 
-  // without filter
-
-
-
   if (errorCode == 0)
     Serial.printf("[CanMsg %d] : configuration OK !\n", __LINE__);
   else
