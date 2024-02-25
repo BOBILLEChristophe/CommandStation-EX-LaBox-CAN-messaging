@@ -51,9 +51,6 @@
 
 #include "DCCEX.h"
 #include "EEPROM.h"
-#ifdef CAN
-#include "CanMsg.h"
-#endif
 
 #ifdef CPU_TYPE_ERROR
 #error CANNOT COMPILE - DCC++ EX ONLY WORKS WITH THE ARCHITECTURES LISTED IN defines.h
