@@ -184,7 +184,7 @@ auto formatMsg = [](CANMessage &frame, byte prio, byte cmde, byte thisNodeId, by
   frame.id |= prio << 27;       // Priorite 0, 1, 2 ou 3
   frame.id |= cmde << 19;       // commande appelée
   frame.id |= thisNodeId << 11; // ID expediteur
-  frame.id |= 0x00 << 3;        // Réservé
+  frame.id |= 0x00 << 3;        // Réservé 
   frame.id |= resp << 2;        // Réponse
   frame.ext = true;
   return frame;
